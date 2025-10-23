@@ -1,0 +1,9 @@
+{
+  "welcome": "Welcome to MedEase",
+  "login": "Login",
+  "dashboard": "Dashboard",
+  "addMedicine": "Add New Medicine",
+  "medicineName": "Medicine Name",
+  "dosage": "Dosage",
+  "time": "Time"
+}
