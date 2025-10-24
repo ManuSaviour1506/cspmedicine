@@ -5,5 +5,9 @@
   "addMedicine": "Add New Medicine",
   "medicineName": "Medicine Name",
   "dosage": "Dosage",
-  "time": "Time"
+  "time": "Time",
+  "invalidCredentials": "Invalid email or password",
+  "noAccount": "Don't have an account?",
+  "registerNow": "Register now",
+  "stopAlarm": "Stop Alarm"
 }

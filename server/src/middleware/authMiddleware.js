@@ -18,17 +18,20 @@ const protect = async (req, res, next) => {
 
       if (!req.user) {
         res.status(401).json({ message: 'Not authorized, user not found' });
-        return;
+        return; // ADDED return to stop execution
       }
 
       next();
     } catch (error) {
       console.error(error);
       res.status(401).json({ message: 'Not authorized, token failed' });
+      return; // ADDED return to stop execution
     }
   }
+  
   if (!token) {
     res.status(401).json({ message: 'Not authorized, no token' });
+    return; // ADDED return to stop execution
   }
 };
 

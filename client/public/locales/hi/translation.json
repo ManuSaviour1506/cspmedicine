@@ -5,5 +5,9 @@
   "addMedicine": "नई दवा जोड़ें",
   "medicineName": "दवा का नाम",
   "dosage": "खुराक",
-  "time": "समय"
+  "time": "समय",
+  "invalidCredentials": "अवैध ईमेल या पासवर्ड",
+  "noAccount": "खाता नहीं है?",
+  "registerNow": "अभी पंजीकरण करें",
+  "stopAlarm": "अलार्म बंद करें"
 }

@@ -8,8 +8,10 @@ const { sendWhatsAppReminder } = require('../services/whatsappService.js');
 // Cron job to run every minute
 cron.schedule('* * * * *', async () => {
   const now = new Date();
-  // Format current time to match the 'time' field in your Medicine model
-  const currentTime = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', hour12: false });
+  // FIX: Use a safe, explicit HH:MM (24-hour) format independent of the server's locale.
+  const hours = String(now.getHours()).padStart(2, '0');
+  const minutes = String(now.getMinutes()).padStart(2, '0');
+  const currentTime = `${hours}:${minutes}`;
 
   try {
     const reminders = await Medicine.find({ time: currentTime }).populate('userId');

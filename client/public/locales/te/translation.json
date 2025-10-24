@@ -5,5 +5,9 @@
   "addMedicine": "కొత్త మందును జోడించండి",
   "medicineName": "మందు పేరు",
   "dosage": "మోతాదు",
-  "time": "సమయం"
+  "time": "సమయం",
+  "invalidCredentials": "చెల్లని ఇమెయిల్ లేదా పాస్వర్డ్",
+  "noAccount": "ఖాతా లేదా?",
+  "registerNow": "ఇప్పుడే రిజిస్టర్ చేయండి",
+  "stopAlarm": "అలారం ఆపండి"
 }

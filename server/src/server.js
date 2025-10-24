@@ -5,7 +5,7 @@ const cors = require('cors');
 const connectDB = require('./config/db.js');
 const authRoutes = require('./routes/authRoutes.js');
 const medicineRoutes = require('./routes/medicineRoutes.js');
-const reminderScheduler = require('./jobs/reminderScheduler.js');
+// const reminderScheduler = require('./jobs/reminderScheduler.js'); // Removed assignment
 
 // Load environment variables from .env file
 dotenv.config();
@@ -25,7 +25,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/medicine', medicineRoutes);
 
 // Start the cron job for reminders
-reminderScheduler;
+require('./jobs/reminderScheduler.js'); // Cleaned up: simply requiring it runs the cron.schedule() inside
 
 const PORT = process.env.PORT || 5001;
 
