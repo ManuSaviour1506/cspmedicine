@@ -14,7 +14,7 @@ const AddMedicine = () => {
     time: '09:00', // Default time
     frequency: 'Daily',
     startDate: '',
-    endDate: '',
+    endDate: '', // ADDED END DATE
     photoURL: '',
   });
   const [loading, setLoading] = useState(false);
@@ -103,6 +103,18 @@ const AddMedicine = () => {
               onChange={handleChange}
               className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
               required
+            />
+          </div>
+
+          {/* NEW FIELD: End Date */}
+          <div className="mb-4">
+            <label className="block text-gray-700 font-semibold mb-2">{t('endDate')}</label>
+            <input
+              type="date"
+              name="endDate"
+              value={formData.endDate}
+              onChange={handleChange}
+              className="w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
 
