@@ -95,13 +95,7 @@ Notification System
 - Built a **real-world, research-driven application**  
 - Conducted **user surveys across 50+ households**  
 - Focused on **usability and accessibility**  
-- Delivered a **deployed and functional product**  
-
----
-
-## 📸 Screenshots
-
-> Add UI screenshots here for better visualization
+- Delivered a **deployed and functional 
 
 ---
 
