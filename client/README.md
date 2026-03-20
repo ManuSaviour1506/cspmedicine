@@ -9,6 +9,10 @@ Built using modern web technologies, the platform focuses on usability, accessib
 ### 🌐 Live Demo: https://medease-psi.vercel.app/
 
 ---
+### test app crediantials
+
+mail-manu5456@gmail.com
+pass-user@5456
 
 ## 🚀 Overview
 
